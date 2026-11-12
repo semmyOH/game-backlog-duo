@@ -5,6 +5,7 @@
 ![alt text](oussama-screen.png)
 
 ## Beyan voortgang
+![alt text](screenbeyan.png)
 
 1. Wat is het verschil tussen de docenten-template, jullie repository en een clone?
 2. Waarom ziet je partner een wijziging pas na jouw push en diens pull?
