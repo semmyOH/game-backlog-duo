@@ -40,7 +40,7 @@ export default function Index({ games }: { games: Game[] }) {
     const form = useForm({ title: '', platform: 'PC' });
 
     const visibleGames = games.filter((game) => {
-        const matchesSearch = game.title.toLowerCase().includes(search.toLowerCase());
+        const matchesSearch = game.title.toLowerCase().includes(search.trim().toLowerCase());
         const matchesStatus = !onlyTodo || game.completed === false;
         return matchesSearch && matchesStatus;
     });
