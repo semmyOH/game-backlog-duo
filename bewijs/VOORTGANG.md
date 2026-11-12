@@ -9,6 +9,7 @@
 
 ## Mohamed voortgang
 ![alt text](moscreen.png)
+![alt text](moproof.png)
 
 
 1. Wat is het verschil tussen de docenten-template, jullie repository en een clone?
