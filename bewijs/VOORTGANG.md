@@ -1,7 +1,8 @@
 ## Sem screenshot
 ![alt text](image.png)
 
-## Ousamma screenshot
+## Oussama screenshot
+![alt text](oussama-screen.png)
 
 ## Beyan screenshot
 
