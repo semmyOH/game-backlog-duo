@@ -36,12 +36,13 @@ function GameCard({ game }: { game: Game }) {
 
 export default function Index({ games }: { games: Game[] }) {
     const [search, setSearch] = useState('');
+    const [onlyTodo, setOnlyTodo] = useState(false);
     const form = useForm({ title: '', platform: 'PC' });
 
     // TODO 2: laat alleen games zien waarvan de titel de zoektekst bevat.
     const visibleGames = games;
     // TODO 3: tel alle uitgespeelde games, onafhankelijk van de zoektekst.
-    const completedCount = games.filter((game) => game.completed).length;
+    const completedCount = 0;
 
     function submit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -89,10 +90,20 @@ export default function Index({ games }: { games: Game[] }) {
             <section>
                 <div className="gb-list-heading">
                     <h2>Mijn games</h2>
-                    <label>Zoek op titel
-                        <input value={search} placeholder="Zoek een game..."
-                            onChange={(e) => setSearch(e.target.value)} />
-                    </label>
+                    <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <label>Zoek op titel
+                            <input value={search} placeholder="Zoek een game..."
+                                onChange={(e) => setSearch(e.target.value)} />
+                        </label>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
+                            <input
+                                type="checkbox"
+                                checked={onlyTodo}
+                                onChange={(e) => setOnlyTodo(e.target.checked)}
+                            />
+                            Alleen nog spelen
+                        </label>
+                    </div>
                 </div>
                 {games.length === 0 ? (
                     <p className="gb-empty">Je lijst is leeg. Voeg je eerste game toe.</p>
