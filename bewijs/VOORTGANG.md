@@ -1,10 +1,10 @@
-## Sem screenshot
+## Sem voortgang
 ![alt text](image.png)
 
-## Oussama screenshot
+## Oussama voortgang
 ![alt text](oussama-screen.png)
 
-## Beyan screenshot
+## Beyan voortgang
 
 1. Wat is het verschil tussen de docenten-template, jullie repository en een clone?
 2. Waarom ziet je partner een wijziging pas na jouw push en diens pull?
@@ -25,3 +25,5 @@
 5. Laravel controleert of de titel goed is ingevuld. Daarna stuurt Laravel de games naar React om ze te laten zien.
 
 ---
+
+https://github.com/semmyOH/game-backlog-duo
