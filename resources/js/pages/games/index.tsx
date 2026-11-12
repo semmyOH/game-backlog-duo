@@ -58,7 +58,7 @@ export default function Index({ games }: { games: Game[] }) {
             <header className="gb-header">
                 <p className="gb-kicker">MIJN COLLECTIE</p>
                 <h1>Game Backlog</h1>
-                <p>Oussama wilt nog spelen.</p>
+                <p>Beyan wilt nog spelen.</p>
                 <p className="gb-total">{completedCount} van {games.length} uitgespeeld</p>
             </header>
             <section className="gb-panel">
