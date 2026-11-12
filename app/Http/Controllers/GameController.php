@@ -43,7 +43,7 @@ class GameController extends Controller
         abort_unless((int) $game->user_id === (int) $request->user()->id, 403);
 
         // TODO 1: draai de boolean om. Nu blijft de waarde nog hetzelfde.
-        $game->completed = $game->completed;
+        $game->completed = !$game->completed;
         $game->save();
 
         return to_route('games.index');

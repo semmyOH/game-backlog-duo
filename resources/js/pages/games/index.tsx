@@ -41,7 +41,7 @@ export default function Index({ games }: { games: Game[] }) {
     // TODO 2: laat alleen games zien waarvan de titel de zoektekst bevat.
     const visibleGames = games;
     // TODO 3: tel alle uitgespeelde games, onafhankelijk van de zoektekst.
-    const completedCount = 0;
+    const completedCount = games.filter((game) => game.completed).length;
 
     function submit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
