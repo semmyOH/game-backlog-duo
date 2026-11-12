@@ -40,12 +40,12 @@ export default function Index({ games }: { games: Game[] }) {
     const form = useForm({ title: '', platform: 'PC' });
 
     const visibleGames = games.filter((game) => {
-        const matchesSearch = game.title.toLowerCase().includes(search.trim().toLowerCase());
-        const matchesStatus = !onlyTodo || game.completed === false;
+        const matchesSearch = game.title.toLowerCase().includes(search.trim().toLowerCase()); // Oussama
+        const matchesStatus = !onlyTodo || game.completed === false;  // Beyan.
         return matchesSearch && matchesStatus;
     });
 
-    const completedCount = games.filter((game) => game.completed).length;
+    const completedCount = games.filter((game) => game.completed).length; // Sem
 
     function submit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -63,7 +63,7 @@ export default function Index({ games }: { games: Game[] }) {
                 <p className="gb-kicker">MIJN COLLECTIE</p>
                 <h1>Game Backlog</h1>
                 <p>Mijn games.</p>
-                <p className="gb-total">{completedCount} van {games.length} uitgespeeld</p>
+                <p className="gb-total">{completedCount} van {games.length} uitgespeeld</p>  {/* sem */}
             </header>
             <section className="gb-panel">
                 <h2>Game toevoegen</h2>
