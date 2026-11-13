@@ -11,14 +11,8 @@
 ![alt text](moscreen.png)
 ![alt text](moproof.png)
 
-
-1. Wat is het verschil tussen de docenten-template, jullie repository en een clone?
-2. Waarom ziet je partner een wijziging pas na jouw push en diens pull?
-3. Welke bestanden worden bij de installatie lokaal aangemaakt?
-4. Waarom krijgt je partner jouw games niet via GitHub?
-5. Waar wordt de titel gecontroleerd en hoe komen de games bij React terecht?
-
 ---
+# kennischeck vragen 1
 
 1. De template is het startproject van de docent. De repository is ons eigen project op GitHub. Een clone is een kopie op je computer.
 
@@ -32,4 +26,20 @@
 
 ---
 
-https://github.com/semmyOH/game-backlog-duo
+# kennischeck vragen 2
+
+1. De route stuurt de wijziging naar Laravel. Met `save()` wordt de nieuwe status opgeslagen in de database.
+
+2. Inloggen betekent dat je een gebruiker bent. Eigenaar zijn betekent dat de game van jou is.
+
+3. Props zijn gegevens die je krijgt (zoals `games`). State zijn gegevens die kunnen veranderen (zoals `search`).
+
+4. `games` bevat alle games voor de voortgang. `visibleGames` bevat alleen de games die zichtbaar zijn na het zoeken.
+
+5. Omdat zoeken alleen in React gebeurt. Er hoeft niets in de database opgeslagen te worden.
+
+6. Ik heb zelf de opdrachten gemaakt, getest en via GitHub gedeeld met mijn partner.
+
+---
+
+- Repository: https://github.com/semmyOH/game-backlog-duo
