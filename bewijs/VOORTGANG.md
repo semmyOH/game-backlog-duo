@@ -1,5 +1,5 @@
 ## Sem voortgang
-![alt text](image.png)
+![alt text](sem.png)
 
 ## Oussama voortgang
 ![alt text](oussama-screen.png)
